@@ -1,3 +1,4 @@
+#SJF with arrival time 0
 print('Shortest Job first')
 arr_time = [0, 0, 0]
 burst_time = [4, 3, 5]
