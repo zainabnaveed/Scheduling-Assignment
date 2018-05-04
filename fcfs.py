@@ -5,7 +5,7 @@ wait_time = [0]*3
 start_time = 0
 finish_time = 0
 turnaround_time = [0]*3
-
+avg=0.0
 
 for index in range(3):
 	print 'Process', index
@@ -17,3 +17,10 @@ for index in range(3):
         turnaround_time[index] = finish_time-arr_time[index]
 	print'Turnaround Time:', turnaround_time[index]
 	start_time= start_time+burst_time[index]
+
+print 'Average Turnaround Time'
+for k in range(3):
+	avg=avg+turnaround_time[k]
+
+avg=avg/3
+print(avg)
