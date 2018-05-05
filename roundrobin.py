@@ -58,6 +58,7 @@ for k in range(3):
 	processes[k]['turnaround_time']=time-processes[k]['arr_time']
 
 avgturntime=0
+k=0
 
 for k in range(3):
 	print processes[k]
